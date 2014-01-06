@@ -126,7 +126,7 @@ void findCurAndUploadPage(int *curPage, int *uploadPage, uint16_t randomNum)
 
   int myCurPage = -1;
   int myUploadPage = -1;
-  uint32_t uploadTs;
+  uint32_t uploadTs = -1;			// mmcp 06-jan-2014 added initialisation
   myHeader hdr;
 
   // First round, search for upload page
